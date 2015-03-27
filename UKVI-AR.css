@@ -3,6 +3,7 @@
 }
 .toolbarbuttons{
     margin-left: 0;
+    float: left;
 }
 .tltoolbar {
     padding: 3px 0 0 20px;
@@ -25,7 +26,10 @@
     width:80%;
 }
 
-.help-block{margin-top:0px}
+.help-block{margin-top:0px;
+                color: #6f777B;    
+
+            }
 .fieldmergedcolumn{overflow: visible; width:75%;}
 .ie7 .fieldmergedcolumn{position: relative;}
 .tlform .radiogroup, .tlform .radiogroup_err {margin: 0px 0 0px 9px;}
@@ -108,7 +112,8 @@ input.formtextfield_err{border:solid 1px #e00000}
     width: 75%;
     background-color: #fff;
     border: 1px solid #bfc1c3;
-	-webkit-appearance: none;
+    -webkit-appearance: none;
+    color: #000000;
 
 }
 .fieldinputcolumn{width: 33%}
@@ -545,7 +550,7 @@ input[type="radio"], input[type="checkbox"] {
     background: white;
     position: relative;
     z-index: 1;
-	background-color:#dee0e2;
+    background-color:#dee0e2;
 }
 
 .radiogroup label, .checkboxfield label, .radiogroup_err label {
@@ -556,7 +561,7 @@ input[type="radio"], input[type="checkbox"] {
     margin-left: -1.8em;
     padding: 20px 30px 5px 45px;
     height: 1.9em;
-	background-color:#dee0e2;
+    background-color:#dee0e2;
     border:1px solid #FFFCFC;
 }
 
@@ -598,7 +603,7 @@ input[type="checkbox"][disabled="disabled"]{
 }
 
 
-input[type="submit"][id*="__link"].button, input[type="submit"][value="Remove document"], input[type="submit"][value="View"], #BTB_BB_Back, #BB_Exit, #BB_tlOld_Exit, #BA_Summary_download {
+input[type="submit"][id*="__link"].button, input[type="submit"][value="Remove document"], input[type="submit"][value="View"], #BB_Back, #BB_Exit, #BB_tlOld_Exit, #BA_Summary_download {
     font-family: "nta",Arial,sans-serif;
     font-size: 19px;
     line-height: 1.31579;
@@ -616,15 +621,17 @@ input[type="submit"][id*="__link"].button, input[type="submit"][value="Remove do
     margin-top: -6px;
     text-align: right;
     padding: 0;
+    display: none;
+    
 }
 
 
 
 
-#BTB_BB_Back {
+#BB_Back {
     text-align: left !important;
     padding-left: 0px;
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 #BTB_BB_Back[disabled="disabled"]{
@@ -680,7 +687,7 @@ div[id="Evidence_heading"] div.fieldwidthmodifierradio{
 .fieldwidthmodifiercheckbox label {
     display: block;
     margin: -11px -1.1em -23px -0.7em;
-    padding: 15px 17px 20px 46px;
+    padding: 17px 17px 1px 46px;
     min-height: 2.2em;
     top: -28px;
     height: auto;
@@ -1023,7 +1030,7 @@ input[type="checkbox"][disabled="disabled"] + label {
     background: transparent;
     margin-left: 0;
     padding-left: 0;
-	cursor:default;
+    cursor:default;
 }
 a, a:visited {
     color: #005ea5;
@@ -1063,6 +1070,7 @@ footer .footer-meta a:hover {
 }
 .tltoolbar_bottom {
     margin-bottom: 20px;
+    float: left;
 }
 /* hide N/A radio buttons */
 input[value="N/A"] {
@@ -1203,7 +1211,7 @@ fieldset[id$="__summary"] .fieldrow.fielddisabled{
 }*/
 fieldset[id$="__summary"] .button {
     margin-top: -41px;
-	}
+    }
 fieldset[id$="__summary"]>legend>h3 {
     border-bottom: 1px solid #dee0e2;
     padding-bottom: 10px;
@@ -1296,7 +1304,7 @@ input[type="submit"][id$="__summary"].button {
     margin-left: 0;
     width: 75%;
     font-size: 3.6rem;
-	font-family:"nta" arial,helvetica,"sans serif";
+    font-family:"nta" arial,helvetica,"sans serif";
     font-size: 36px;
     line-height: 1.11111;
     font-weight: 700;
@@ -1395,6 +1403,7 @@ a[title^="Accessibility"]{
 
 #aj_tablemain_Summary tr>td:nth-child(2){
     width: 58%;
+    color: #8D8D8D;
 }
 
 #aj_tablemain_Summary tr>td:nth-child(3){
@@ -1465,7 +1474,7 @@ input[type="submit"][id$="__summary"].button.backtosummary, div.formtableaddbutt
 }
 
  
-input[value="Add"]#BB_OK, input[value="Add"]#BTB_BB_OK, #BTB_BB_Exit, #BB_Next, #BB_Back, #BTB_BB_tlOld_Exit, #BTB_BB_tlOld_Back, #BB_tlOld_Back, #BB_tlOld_Next  {
+input[value="Add"]#BB_OK, input[value="Add"]#BTB_BB_OK, #BTB_BB_Exit, #BB_Next, #BTB_BB_Back, #BTB_BB_tlOld_Exit, #BTB_BB_tlOld_Back, #BB_tlOld_Back, #BB_tlOld_Next  {
     display:none;
 
 }
@@ -1620,7 +1629,7 @@ form[action$="UKVI_Admin_Review_Guidance.ofml"] #BTB_BB_Next, form[action$="UKVI
     box-shadow: none;
     margin-right: 14px;
     margin-top: 0px;
-    width: 100%;
+    /*width: 100%;*/
     height: 76px;
     outline:none;
 
@@ -1828,7 +1837,7 @@ div.home {
 
 
 .phase-tag-beta {
-    background-color: #f47738;
+    background-color: #d53880;
     color: #fff;
     font-size: 18px;
     font-weight: 700 !important;
@@ -2061,6 +2070,7 @@ a#proposition-name:hover {
     margin-bottom: 5px;
     border: none !important;
     margin-right: 10px;
+    opacity: 0.50;
 
 }
 
